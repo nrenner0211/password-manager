@@ -6,7 +6,7 @@ Our 2nd group project!
 
 `Use Node.js and Express.js to create a RESTful API`
 
-`Use Handlebars.js as the templating engine` (we don't have to use handlebars, the module just says so)
+`Use Handlebars.js as the templating engine`
 
 `Use MySQL and the Sequelize ORM for the database`
 
@@ -34,7 +34,7 @@ Our 2nd group project!
 
 ## Idea Dump
 
-We are going for the MVP (just make it work), but if we have time to make our app better, we can add ideas here! (for now)
+We are going for the MVP (just make it work), but if we have time to make our app better, we can add ideas here!
 
 - come up with a catchy name, SecuriT, SecuriSave? etc
 
