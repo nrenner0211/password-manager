@@ -18,6 +18,7 @@ if (process.env.JAWSDB_URL) {
       host: "localhost",
       dialect: "mysql",
       port: 3306,
+      password: "B007CmP2022"
     }
   );
 }

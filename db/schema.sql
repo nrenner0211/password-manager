@@ -1,3 +1,5 @@
-DROP DATABASE IF EXISTS password_manager_db;
-
-CREATE DATABASE password_manager_db;
+CREATE TABLE userInput (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(30) NULL,
+    pass_word VARCHAR(30) NULL
+);
