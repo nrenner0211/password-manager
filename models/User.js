@@ -1,6 +1,8 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
+// import security package here
+
 // create our User model
 class User extends Model {}
 

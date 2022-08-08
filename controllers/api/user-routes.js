@@ -3,7 +3,11 @@ const { User } = require("../../models");
 
 // GET all users
 router.get("/", (req, res) => {
-  User.findAll()
+  User.findAll({
+
+    attributes: { exclude: ['password'] }
+
+  })
     .then((dbUserData) => res.json(dbUserData))
     .catch((err) => {
       console.log(err);
@@ -14,6 +18,9 @@ router.get("/", (req, res) => {
 // GET user by id
 router.get("/:id", (req, res) => {
   User.findOne({
+
+    attributes: { exclude: ['password'] },
+
     where: {
       id: req.params.id,
     },
@@ -54,7 +61,7 @@ router.put("/:id", (req, res) => {
   })
     .then((dbUserData) => {
       if (!dbUserData[0]) {
-        res.status(404).json({ message: "No user found with this id" });
+        res.status(404).json({ message: "No user found with this ID!" });
         return;
       }
       res.json(dbUserData);
