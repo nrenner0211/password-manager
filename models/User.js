@@ -35,8 +35,9 @@ User.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
+      // password must be 10chars long
       validate: {
-        len: [4],
+        len: [10],
       },
     },
   },
