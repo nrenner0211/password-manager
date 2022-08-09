@@ -1,8 +1,15 @@
 // import models
 const User = require("./User");
+const Item = require("./Item");
 
 
 // create associations
-// User.hasMany()
+User.hasMany(Item, {
+    foreignKey: 'user_id'
+});
 
-module.exports = { User };
+Item.belongsTo(User, {
+    foreignKey: 'user_id'
+});
+
+module.exports = { User, Item };
