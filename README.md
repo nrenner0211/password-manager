@@ -52,7 +52,7 @@ Node.js and npm packages express, express-handlebars, mysql2, sequelize, dotenv,
 
 [Repository](https://github.com/nrenner0211/password-manager)
 
-[Deployed](Coming soon!)
+[Deployed](https://safe-escarpment-80538.herokuapp.com/)
 
 ## Future Development
 
