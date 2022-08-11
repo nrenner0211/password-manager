@@ -1,6 +1,8 @@
 const router = require("express").Router();
 const { User } = require("../../models");
 
+// http://localhost:3000/api/users/
+
 // GET all users
 router.get("/", (req, res) => {
   User.findAll({

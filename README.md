@@ -1,8 +1,16 @@
-# password-manager
+# Vault
 
-Our 2nd group project!
+## About
 
-## Requirements
+Vault is an application that acts as a secure password manager. In the age of big data leaks, we wanted to produce a safe place for your information. User story below:
+
+`AS A person concerned with privacy on the internet`
+
+`I WANT a secure application to save sensitive items`
+
+`SO THAT I can have safe storage and peace of mind`
+
+## Project Requirements
 
 `Use Node.js and Express.js to create a RESTful API`
 
@@ -32,23 +40,28 @@ Our 2nd group project!
 
 `Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application)`
 
-## Idea Dump
+## Walkthrough
 
-We are going for the MVP (just make it work), but if we have time to make our app better, we can add ideas here!
+Coming soon!
 
-- come up with a catchy name, SecuriT, SecuriSave? etc
+## Technology Used
 
-- one of our requirements is to use a new technology, so maybe we can find a new hasher or other encryption technology
+Node.js and npm packages express, express-handlebars, mysql2, sequelize, dotenv
 
-- if we have time, implementing light/dark mode would give us points for interactivity
+## Links
 
-- generate random password (maybe we can use code from our password-generator)
+[Repository](https://github.com/nrenner0211/password-manager)
 
-- other security apps have features such as add secure notes, add debit card, upload docs, weak password alert
+[Deployed](Coming soon!)
+
+## Future Development
+
+In the future, we would like to add features such as light/dark mode, weak password alert, add secure notes, generate random password, and a file portal to act as a virtual filing cabinet.
 
 ## Collaborators
 
-Add your contact info below (whetever you want, linkedin, email, etc)
-
 Nicolette Renner
-[LinkedIn](https://www.linkedin.com/in/nicolette-renner/)
+[Portfolio](https://nrenner0211.github.io/my-first-portfolio/)
+
+[![Linkedin Badge](https://img.shields.io/badge/-nrenner0211-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nrenner0211/)](https://www.linkedin.com/in/nrenner0211/)
+[![Gmail Badge](https://img.shields.io/badge/-nrenner0211@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nrenner0211@gmail.com)](mailto:nrenner0211@gmail.com)
