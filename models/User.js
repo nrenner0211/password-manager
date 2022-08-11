@@ -1,19 +1,30 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-// here we need to import encryption technology
+// import security package here
 
 // create our User model
-class User extends Model {}
+class User extends Model {
+  // check password at login
+  checkPassword(loginPw) {
+    return loginPw, this.password;
+  }
+}
 
+// define table columns and configuration
 User.init(
   {
     id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
     username: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
@@ -24,16 +35,16 @@ User.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
+      // password must be 10chars long
       validate: {
-        //
-        len: [12],
+        len: [10],
       },
     },
   },
   {
-    // hooks: {
-    //     // encryption goes here
-    // },
+    hooks: {
+      // security package
+    },
     sequelize,
     timestamps: false,
     freezeTableName: true,
