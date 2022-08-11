@@ -52,3 +52,5 @@ Add your contact info below (whetever you want, linkedin, email, etc)
 
 Nicolette Renner
 [LinkedIn](https://www.linkedin.com/in/nicolette-renner/)
+Davon Webb
+[LinkedIn](https://www.linkedin.com/in/davon-webb-93b915158/)
