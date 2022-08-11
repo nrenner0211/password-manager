@@ -37,7 +37,7 @@ button {
 }
 
 button:hover {
-  background-color: #3C493F;
+  background-color: #C5CBD3;
 }
 
 .post-list {
@@ -154,7 +154,7 @@ main {
 }
 
 footer {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #9BC53D;
   display: flex;
   justify-content: center;
   padding: 1%;
