@@ -46,7 +46,7 @@ Coming soon!
 
 ## Technology Used
 
-Node.js and npm packages express, express-handlebars, mysql2, sequelize, dotenv, express-session
+Node.js and npm packages express, express-handlebars, mysql2, sequelize, dotenv, and express-session. For our new technology, we used [Bulma](https://bulma.io/)
 
 ## Links
 
