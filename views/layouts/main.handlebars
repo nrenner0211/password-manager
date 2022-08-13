@@ -1,33 +1,70 @@
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>test</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/stylesheets/styles.css" />
-  </head>
+{{!-- HEAD / STYLESHEETS --}}
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vault</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css" />
+</head>
+
+{{!-- BODY --}}
 
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">Vault</a>
-      </h1>
-    </header>
-    <main>
-      <article>
-        <button id="button" type="button">Save</button>
-      </article>
-      {{{ body }}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
+
+  {{!-- NAVIGATION --}}
+
+  <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/"><i class="fa-solid fa-fingerprint">Vault</i></a>
+
+      {{!-- navbar "burger" --}}
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+
+      {{#if loggedIn}}
+      <a href="/dashboard">dashboard</a>
+      <button id="logout" class="button is-primary">logout</button>
+      {{/if}}
+    </div>
+  </nav>
+
+  </header>
+  <main>
+    {{{body}}}
+  </main>
+
+  {{! FOOTER }}
+
+  <footer id="footer" class="footer">
+    <div class="content center">
+      <p>
+        <strong>Vault</strong>
+        by
+        <a href="https://nrenner0211.github.io/my-first-portfolio/">Nicolette Renner</a>,
+
+        {{!-- INSERT PORTFOLIOS HERE --}}
+
+      </p>
+    </div>
+  </footer>
+
   </div>
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+
 </body>
+
+</html>

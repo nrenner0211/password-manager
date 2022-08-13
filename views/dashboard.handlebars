@@ -1,0 +1,31 @@
+<section>
+  <h2>Add</h2>
+
+  <form class="new-item-form">
+    <div>
+      <label for="title">Nickname</label>
+      <input type="text" id="title" name="title" />
+    </div>
+    <div>
+      <label for="item_content">Password</label>
+      <input id="" name="post-url" />
+    </div>
+    <button type="submit" class="btn">Add to Vault</button>
+  </form>
+</section>
+
+{{#if items.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each items as |item|}}
+    <li>
+      {{> post-info post}}
+      <a href="/dashboard/edit/{{item.id}}" class="edit-link">Edit item</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-item.js"></script>

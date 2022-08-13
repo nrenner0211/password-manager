@@ -15,10 +15,10 @@ router.get("/", (req, res) => {
     //     )
     //   ],
     ],
-    include: {
-        model: User,
-        attributes: ['username']
-    }
+    // include: {
+    //     model: User,
+    //     attributes: ['username']
+    // }
   })
     .then((dbPostData) => {
       // pass a single post object into the homepage template
