@@ -6,7 +6,7 @@ const { Item, User } = require("../../models");
 // GET items
 router.get("/", (req, res) => {
   Item.findAll({
-    attributes: ["id", "title", "item_content", "created_at"],
+    attributes: ["id", "title", "content", "created_at"],
     order: [['created_at', 'DESC']]
   })
 
@@ -21,7 +21,7 @@ router.get("/", (req, res) => {
 router.post("/", (req, res) => {
   Item.create({
     title: req.body.title,
-    item_content: req.body.item_content,
+    content: req.body.content,
     user_id: req.body.user_id,
   })
     .then((dbPostData) => res.json(dbPostData))
@@ -36,7 +36,7 @@ router.put("/:id", (req, res) => {
   Item.update(
     {
       title: req.body.title,
-      item_content: req.body.item_content
+      content: req.body.content
     },
     {
       where: {

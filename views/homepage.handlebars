@@ -1,66 +1,91 @@
-<div class="field">
-    <p class="control has-icons-left">
-        <input class="input" type="username" placeholder="Username">
-        <span class="icon is-small is-left">
-            <i class="fas fa-check"></i>
-        </span>
-        <span class="icon is-small is-right">
-            <i class="fas fa-envelope"></i>
-        </span>
-    </p>
-</div>
+{{! LOGIN }}
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column card">
+        <form class="login-form">
 
-<div class="field">
-    <p class="control has-icons-left">
-        <input class="input" type="password" placeholder="Password">
-        <span class="icon is-small is-left">
-            <i class="fas fa-lock"></i>
-        </span>
-    </p>
-</div>
+          <p class="field control has-icons-left">
+            <input id="email-login" class="input" type="email" placeholder="Email" />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </p>
 
-<div class="field">
-    <p class="control">
-        <button class="button">
-            Login
-        </button>
-    </p>
-</div>
+          <p class="field control has-icons-left">
+            <input id="password-login" class="input" type="password" autocomplete="on" placeholder="Password" />
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
 
-<div class="field">
-    <p class="control has-icons-left">
-        <input class="input" type="username" placeholder="Username">
-        <span class="icon is-small is-left">
-            <i class="fas fa-lock"></i>
-        </span>
-    </p>
-</div>
+          <p class="control">
+            <button class="login-form button">
+              Login
+            </button>
+          </p>
 
-<div class="field">
-    <p class="control has-icons-left">
-        <input class="input" type="email" placeholder="Email">
-        <span class="icon is-small is-left">
-            <i class="fas fa-envelope"></i>
-        </span>
-    </p>
-</div>
+        </form>
+      </div>
 
-<div class="field">
-    <p class="control has-icons-left">
-        <input class="input" type="password" placeholder="Password">
-        <span class="icon is-small is-left">
-            <i class="fas fa-lock"></i>
-        </span>
-    </p>
-</div>
+      {{! LOGO }}
 
-<div class="field">
-    <p class="control">
-        <button class="button">
-            Sign Up
-        </button>
-    </p>
-</div>
+      <div class="column">
+        <i id="logo" class="center fa-solid fa-lock"></i>
+      </div>
 
+      {{! SIGN UP }}
+
+      <div class="column card">
+
+        <form class="signup-form">
+          <p class="field control has-icons-left">
+            <input
+              id="username-signup"
+              class="input"
+              type="username"
+              placeholder="Username"
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </p>
+
+          <p class="field control has-icons-left">
+            <input
+              id="email-signup"
+              class="input"
+              type="email"
+              placeholder="Email"
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </p>
+
+          <p class="field control has-icons-left">
+            <input
+              id="password-signup"
+              class="input"
+              type="password"
+              placeholder="Password"
+              autocomplete="on"
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
+
+          <p class="control">
+            <button class="signup-form button">
+              Sign Up
+            </button>
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="/javascript/login.js"></script>
