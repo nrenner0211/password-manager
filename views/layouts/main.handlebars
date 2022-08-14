@@ -20,9 +20,9 @@
 
   {{!-- NAVIGATION --}}
 
-  <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+  <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="/"><i class="fa-solid fa-fingerprint">Vault</i></a>
+      <a class="navbar-item" href="/"><i class="fa-solid fa-house">Home</i></a>
 
       {{!-- navbar "burger" --}}
 
@@ -33,13 +33,25 @@
       </a>
 
       {{#if loggedIn}}
-      <a href="/dashboard">dashboard</a>
-      <button id="logout" class="button is-primary">logout</button>
+      <a class="navbar-item" href="/dashboard">Dashboard</a>
+      <button id="logout" class="button">Logout</button>
       {{/if}}
     </div>
   </nav>
 
-  </header>
+{{!-- HERO --}}
+
+  <div class="hero is-medium">
+    <div id="hero" class="hero-body">
+      <p class="title">
+        <i class="fa-solid fa-fingerprint">Vault</i>
+      </p>
+      <p class="subtitle">
+        Simple. Safe. Secure.
+      </p>
+    </div>
+  </div>
+
   <main>
     {{{body}}}
   </main>
@@ -51,12 +63,13 @@
       <p>
         <strong>Vault</strong>
         by
-        <a href="https://nrenner0211.github.io/my-first-portfolio/">Nicolette Renner</a>,
+        <a href="https://nrenner0211.github.io/my-first-portfolio/">Nicolette Renner</a>
+      </p>
 
         {{!-- INSERT PORTFOLIOS HERE --}}
 
-      </p>
-    </div>
+        <a href="https://staysafeonline.org/online-safety-privacy-basics/why-data-privacy-is-necessary-in-todays-world/">Learn more about data privacy</a>
+      </div>
   </footer>
 
   </div>

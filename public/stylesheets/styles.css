@@ -1,15 +1,51 @@
 :root {
   --nuketown: #50FFB1;
-  --cadet: #5D737E;
+  --alice-blue: #E8F1F2;
+  --smoky-black: #131112;
+  --gunmetal: #292F36;
 }
 
 body {
-  background-color: black;
+  background-color: var(--smoky-black);
   height: 100vh;
+}
+
+#hero {
+  background-image: url(/images/keyboard.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-bottom: solid 2px var(--nuketown);
+}
+
+#logo {
+  color: rgba(236, 229, 240, 0.3);
+  font-size: 150px;
+}
+
+.navbar {
+  background-color: var(--smoky-black);
+  font-size: larger;
+}
+
+.card {
+  background-color: var(--alice-blue);
+}
+
+.title {
+  color: var(--nuketown);
+}
+
+.subtitle {
+  color: var(--nuketown);
 }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer {
+  background-color: var(--smoky-black);
 }
