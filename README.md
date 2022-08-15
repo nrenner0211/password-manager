@@ -2,7 +2,7 @@
 
 ## About
 
-Vault is an application that acts as a secure password manager. In the age of big data leaks, we wanted to produce a safe place for your information. User story below:
+Vault is an application that acts as a secure password manager. In the age of big data leaks, we want to produce a safe place for your information. User story below:
 
 `AS A person concerned with privacy on the internet`
 
@@ -46,7 +46,7 @@ Coming soon!
 
 ## Technology Used
 
-Node.js and npm packages express, express-handlebars, mysql2, sequelize, dotenv, and express-session. For our new technology, we used [Bulma](https://bulma.io/)
+Node.js and npm packages express, express-handlebars, mysql2, sequelize, dotenv, express-session and bcrypt. To hit our new technology requirement, we used [Bulma](https://bulma.io/) to style the application.
 
 ## Links
 
@@ -65,3 +65,5 @@ Nicolette Renner
 
 [![Linkedin Badge](https://img.shields.io/badge/-nrenner0211-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nrenner0211/)](https://www.linkedin.com/in/nrenner0211/)
 [![Gmail Badge](https://img.shields.io/badge/-nrenner0211@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:nrenner0211@gmail.com)](mailto:nrenner0211@gmail.com)
+
+Davon Webb
