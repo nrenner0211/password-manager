@@ -25,21 +25,7 @@ app.use(controllers);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
-
-
-// function to create username/password and site url to send to database
-// app.post('/api/pass_word/', ({ body }, res) => {
-//   const errors = inp
-//   const sql = `INSERT INTO userInput (website, username, pass_word )`
-//   if (!) 
-//   const passWord = $('')
-//     .addText('')
-//   addUserData.append(passWord);
-// });
-
-
-
-
   // const savePass = function() {
   //   localStorage.setItem('')
   // }
+// console.log(`Now listening to ${PORT}`)
