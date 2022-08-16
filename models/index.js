@@ -1,6 +1,7 @@
 // import models
 const User = require("./User");
 const Item = require("./Item");
+const Password = require("./password")
 
 
 // create associations
@@ -12,4 +13,4 @@ Item.belongsTo(User, {
     foreignKey: 'user_id'
 });
 
-module.exports = { User, Item };
+module.exports = { User, Item, Password };
