@@ -7,6 +7,8 @@
 
 body {
   background-color: var(--smoky-black);
+  background-repeat: repeat;
+  background-position: center;
   height: 100vh;
 }
 
@@ -28,8 +30,25 @@ body {
   font-size: larger;
 }
 
+.button {
+  font-family: 'Roboto Mono', monospace;
+}
+
 .card {
   background-color: var(--alice-blue);
+  /* width: 80%; */
+}
+
+.card-header {
+  font-family: 'Roboto Mono', monospace;
+  border-bottom: solid 1px var(--alice-blue);
+  font-size: larger;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.card-header:hover {
+  border-bottom: solid 1px var(--nuketown);
 }
 
 .title {

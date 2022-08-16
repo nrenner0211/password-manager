@@ -18,11 +18,16 @@
 -- items
 {
     "title": "Facebook Password",
-    "item_content": "password1234",
+    "content": "password1234",
     "user_id": 1
 },
 {
     "title": "Myspace Password",
-    "item_content": "tomfrommyspace",
+    "content": "tomfrommyspace",
     "user_id": 2
+},
+{
+	"title": "myspace password",
+	"content": "jackrabbit",
+	"user_id": 3
 }

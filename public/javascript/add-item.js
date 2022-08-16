@@ -1,10 +1,10 @@
 async function newItemHandler(event) {
     event.preventDefault();
 
-    const title = document.querySelector('input[name="item-title"]').value;
-    const content = document.querySelector('input[name="content"]').value;
+    const title = document.querySelector('input[id="title"]').value.trim();
+    const content = document.querySelector('#content').value.trim();
 
-    const response = await fetch('/api/item', {
+    const response = await fetch('/api/items', {
         method: "POST",
         body: JSON.stringify({
             title,
@@ -16,7 +16,7 @@ async function newItemHandler(event) {
     });
 
     if (response.ok) {
-        document.location.replace("/dashboard");
+        document.location.replace("dashboard");
     } else {
         alert(response.statusText);
     }

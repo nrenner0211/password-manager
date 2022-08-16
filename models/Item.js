@@ -16,7 +16,7 @@ Item.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    item_content: {
+    content: {
       type: DataTypes.STRING,
       allowNull: false,
     },
