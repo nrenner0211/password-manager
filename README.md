@@ -60,7 +60,7 @@ In the future, we would like to add features such as light/dark mode, weak passw
 
 ## Collaborators
 
-Nicolette Renner
+Nicolette Renner ---
 [Portfolio](https://nrenner0211.github.io/my-first-portfolio/)
 
 [![Linkedin Badge](https://img.shields.io/badge/-nrenner0211-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nrenner0211/)](https://www.linkedin.com/in/nrenner0211/)

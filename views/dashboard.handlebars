@@ -1,31 +1,49 @@
-<section>
-  <h2>Add</h2>
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column card">
+        <header class="card-header center">add to vault</header>
 
-  <form class="new-item-form">
-    <div>
-      <label for="title">Nickname</label>
-      <input type="text" id="title" name="title" />
+        <form class="new-item-form">
+
+          <label for="input-title">Nickname</label>
+          <input type="text" id="input-title" class="field input" name="input-title" />
+
+          <label for="input-content">Secure Item</label>
+          <input id="input-content" class="field input" name="input-content" />
+
+          <button type="submit" class="new-item-form button is-primary is-outlined">add<i
+              class="fa-solid fa-plus"></i></button>
+        </form>
+      </div>
     </div>
-    <div>
-      <label for="content">Secure Item</label>
-      <input id="submit" name="content" />
-    </div>
-    <button type="submit" class="button">Add to Vault</button>
-  </form>
-</section>
+  </div>
 
-{{#if items.length}}
-<section>
-  <h2>Your Vault</h2>
-  <ol>
-    {{#each items as |item|}}
-    <li>
-      {{> item-info item}}
-      <a href="/dashboard/edit/{{item.id}}" class="edit">Edit Item</a>
-    </li>
-    {{/each}}
-  </ol>
-</section>
-{{/if}}
 
-<script src="/javascript/add-item.js"></script>
+  {{! LOGO }}
+
+  <section class="section is-large">
+    <i id="logo" class="center fa-solid fa-lock"></i>
+  </section>
+
+  {{#if items.length}}
+  {{!-- <div class="container">
+    <div class="columns"> --}}
+      <div class="column card">
+        <header class="card-header center">your vault</header>
+        <div class="box">
+          <ol>
+            {{#each items as |item|}}
+            <li>
+              {{> item-info item}}
+              <a href="/dashboard/edit/{{item.id}}" class="edit-link">edit</a>
+            </li>
+            {{/each}}
+          </ol>
+        </div>
+      </div>
+    {{!-- </div>
+  </div> --}}
+  {{/if}}
+
+  <script src="/javascript/add-item.js"></script>
