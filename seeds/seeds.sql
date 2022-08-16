@@ -29,5 +29,5 @@
 {
 	"title": "myspace password",
 	"content": "jackrabbit",
-	"user_id": 3
+	"user_id": 2
 }
