@@ -6,11 +6,11 @@
 
         <form class="new-item-form">
 
-          <label for="title">Nickname</label>
-          <input type="text" id="title" class="field input" name="title" />
+          <label for="input-title">Nickname</label>
+          <input type="text" id="input-title" class="field input" name="input-title" />
 
-          <label for="content">Secure Item</label>
-          <input id="content" class="field input" name="content" />
+          <label for="input-content">Secure Item</label>
+          <input id="input-content" class="field input" name="input-content" />
 
           <button type="submit" class="new-item-form button is-primary is-outlined">add<i
               class="fa-solid fa-plus"></i></button>
@@ -27,8 +27,8 @@
   </section>
 
   {{#if items.length}}
-  <div class="container">
-    <div class="columns">
+  {{!-- <div class="container">
+    <div class="columns"> --}}
       <div class="column card">
         <header class="card-header center">your vault</header>
         <div class="box">
@@ -42,8 +42,8 @@
           </ol>
         </div>
       </div>
-    </div>
-  </div>
+    {{!-- </div>
+  </div> --}}
   {{/if}}
 
   <script src="/javascript/add-item.js"></script>
