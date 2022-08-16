@@ -1,4 +1,4 @@
-async function editFormHandler(event) {
+async function editItemHandler(event) {
   event.preventDefault();
 
   const title = document.querySelector('input[name="title"]').value.trim();

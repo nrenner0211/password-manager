@@ -5,11 +5,9 @@
   --gunmetal: #292F36;
 }
 
-body {
+html, body {
+  height: 100% !important;
   background-color: var(--smoky-black);
-  background-repeat: repeat;
-  background-position: center;
-  height: 100vh;
 }
 
 #hero {
@@ -67,4 +65,5 @@ body {
 
 .footer {
   background-color: var(--smoky-black);
+  font-family: 'Roboto Mono', monospace;
 }

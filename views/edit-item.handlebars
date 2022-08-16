@@ -1,0 +1,21 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    edit
+  </h2>
+  <form class="edit-item-form form">
+    <div>
+      <input class="input" name="title" type="text" value="{{title}}" />
+      <span>({{title}})</span>
+    </div>
+    {{!-- <div>
+      <input name="title" type="text" value="{{title}}" />
+      <span>({{title}})</span>
+    </div> --}}
+    <button class="button is-primary is-outlined" type="submit">save</button>
+    <button type="button" class="delete-item-btn button is-primary is-outlined">delete</button>
+  </form>
+</article>
+
+<script src="/javascript/edit-item.js"></script>
+<script src="/javascript/delete-item.js"></script>

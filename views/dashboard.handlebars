@@ -6,11 +6,13 @@
 
         <form class="new-item-form">
 
-          <label for="input-title">Nickname</label>
-          <input type="text" id="input-title" class="field input" name="input-title" />
+          <label for="input-title"></label>
+          <input type="text" id="input-title" class="field input" name="input-title"
+          placeholder="Account Nickname" />
 
-          <label for="input-content">Secure Item</label>
-          <input id="input-content" class="field input" name="input-content" />
+          <label for="input-content"></label>
+          <input id="input-content" class="field input" name="input-content"
+          placeholder="Password" />
 
           <button type="submit" class="new-item-form button is-primary is-outlined">add<i
               class="fa-solid fa-plus"></i></button>
@@ -22,13 +24,13 @@
 
   {{! LOGO }}
 
-  <section class="section is-large">
+  <section class="section is-small">
     <i id="logo" class="center fa-solid fa-lock"></i>
   </section>
 
   {{#if items.length}}
-  {{!-- <div class="container">
-    <div class="columns"> --}}
+  <div class="container">
+    <div class="columns">
       <div class="column card">
         <header class="card-header center">your vault</header>
         <div class="box">
@@ -36,14 +38,14 @@
             {{#each items as |item|}}
             <li>
               {{> item-info item}}
-              <a href="/dashboard/edit/{{item.id}}" class="edit-link">edit</a>
+              <a href="/dashboard/edit/{{item.id}}" class="edit-link button is-primary is-outlined">edit</a>
             </li>
             {{/each}}
           </ol>
         </div>
       </div>
-    {{!-- </div>
-  </div> --}}
+    </div>
+  </div>
   {{/if}}
 
   <script src="/javascript/add-item.js"></script>

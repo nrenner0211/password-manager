@@ -41,7 +41,3 @@ app.use(controllers);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
-  // const savePass = function() {
-  //   localStorage.setItem('')
-  // }
-// console.log(`Now listening to ${PORT}`)
