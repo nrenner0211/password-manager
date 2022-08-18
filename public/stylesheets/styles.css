@@ -85,6 +85,14 @@ html, body {
 }
 
 .vault-box {
+  display: flex;
   overflow: auto;
-  /* box-shadow: inset; */
+  /* overflow-y: hidden;
+  white-space: pre-line;
+  box-sizing: border-box;
+  white-space: normal; */
 }
+
+/* .vault-box:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);  
+} */
