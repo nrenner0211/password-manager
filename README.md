@@ -42,7 +42,7 @@ Vault is an application that acts as a secure password manager. In the age of bi
 
 ## Walkthrough
 
-Coming soon!
+[.gif of functional application](public/images/screen-capture%20(9).gif)
 
 ## Technology Used
 

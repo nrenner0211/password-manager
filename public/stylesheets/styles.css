@@ -2,12 +2,12 @@
   --nuketown: #50FFB1;
   --alice-blue: #E8F1F2;
   --smoky-black: #131112;
-  --gunmetal: #292F36;
 }
 
 html, body {
   height: 100% !important;
   background-color: var(--smoky-black);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #hero {
@@ -23,13 +23,8 @@ html, body {
   font-size: 150px;
 }
 
-.navbar {
-  background-color: var(--smoky-black);
-  font-size: larger;
-}
-
 .button {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Ubuntu', monospace;
 }
 
 .card {
@@ -38,23 +33,17 @@ html, body {
 }
 
 .card-header {
-  font-family: 'Roboto Mono', monospace;
   border-bottom: solid 1px var(--alice-blue);
   font-size: larger;
   font-weight: bold;
   padding-bottom: 10px;
+  width: 50%;
 }
 
 .card-header:hover {
   border-bottom: solid 1px var(--nuketown);
-}
-
-.title {
-  color: var(--nuketown);
-}
-
-.subtitle {
-  color: var(--nuketown);
+  cursor: pointer;
+  background-color: hsl(0, 0%, 86%);
 }
 
 .center {
@@ -65,5 +54,21 @@ html, body {
 
 .footer {
   background-color: var(--smoky-black);
-  font-family: 'Roboto Mono', monospace;
+}
+
+.navbar {
+  background-color: var(--smoky-black);
+  font-size: larger;
+}
+
+.subtitle-main {
+  color: var(--nuketown);  
+}
+
+.title {
+  color: var(--nuketown);
+}
+
+.vault-box {
+  box-shadow: inset;
 }

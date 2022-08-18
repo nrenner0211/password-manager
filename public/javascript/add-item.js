@@ -1,28 +1,26 @@
 async function newItemHandler(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    const title = document.querySelector('input[id="input-title"]').value.trim();
-    const content = document.querySelector('#input-content').value.trim();
+  const title = document.querySelector('input[id="title"]').value.trim();
+  const content = document.querySelector("#content").value.trim();
 
-    const response = await fetch('/api/items', {
-        method: "POST",
-        // ALTERED
-        body: JSON.stringify({
+  const response = await fetch("/api/items", {
+    method: "POST",
 
-            title,
-            content,
+    body: JSON.stringify({
+      title,
+      content,
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
 
-        }),
-        headers: {
-            "Content-Type": "application/json",
-        },
-    });
-
-    if (response.ok) {
-        document.location.replace("dashboard");
-    } else {
-        alert(response.statusText);
-    }
+  if (response.ok) {
+    document.location.replace("/dashboard");
+  } else {
+    alert(response.statusText);
+  }
 }
 
 document

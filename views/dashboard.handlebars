@@ -1,25 +1,25 @@
 <div class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column card">
+  <div class="container has-background-grey-light">
+    {{!-- <div class="columns"> --}}
+      <div class="column card has-background-white-ter">
         <header class="card-header center">add to vault</header>
 
         <form class="new-item-form">
 
-          <label for="input-title"></label>
-          <input type="text" id="input-title" class="field input" name="input-title"
+          <label for="title"></label>
+          <input type="text" id="title" class="field input" name="title"
           placeholder="Account Nickname" />
 
-          <label for="input-content"></label>
-          <input id="input-content" class="field input" name="input-content"
+          <label for="content"></label>
+          <input id="content" class="field input" name="content"
           placeholder="Password" />
 
           <button type="submit" class="new-item-form button is-primary is-outlined">add<i
               class="fa-solid fa-plus"></i></button>
         </form>
       </div>
-    </div>
-  </div>
+    {{!-- </div> --}}
+  {{!-- </div> --}}
 
 
   {{! LOGO }}
@@ -29,19 +29,19 @@
   </section>
 
   {{#if items.length}}
-  <div class="container">
-    <div class="columns">
-      <div class="column card">
+  <div class="container has-background-grey-light">
+    {{!-- <div class="columns"> --}}
+      <div class="column card has-background-white-ter">
         <header class="card-header center">your vault</header>
-        <div class="box">
-          <ol>
+        <div class="box columns vault-box has-background-white-bis">
+          <div>
             {{#each items as |item|}}
-            <li>
+            <div class="column">
               {{> item-info item}}
               <a href="/dashboard/edit/{{item.id}}" class="edit-link button is-primary is-outlined">edit</a>
-            </li>
+            </div>
             {{/each}}
-          </ol>
+          </ul>
         </div>
       </div>
     </div>
