@@ -1,17 +1,19 @@
 <article>
   <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
+  <div class="subtitle">
     edit
-  </h2>
+  </div>
   <form class="edit-item-form form">
     <div>
-      <input class="input" name="title" type="text" value="{{title}}" />
-      <span>({{title}})</span>
+      <input class="input" name="title" type="text" placeholder="Update Account Name" />
+      {{!-- <span>{{item}}</span> --}}
     </div>
+
     {{!-- <div>
-      <input name="title" type="text" value="{{title}}" />
-      <span>({{title}})</span>
+      <input class="input" name="content" type="text" placeholder="Update Password" value="{{content}}" />
+      <span>({{content}})</span>
     </div> --}}
+
     <button class="button is-primary is-outlined" type="submit">save</button>
     <button type="button" class="delete-item-btn button is-primary is-outlined">delete</button>
   </form>

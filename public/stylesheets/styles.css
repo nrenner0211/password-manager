@@ -61,6 +61,21 @@ html, body {
   font-size: larger;
 }
 
+.secret {
+  opacity: 0.0;
+  font-size: larger;
+}
+
+.secret:hover {
+  opacity: 1.0;
+  cursor: pointer;
+  color: var(--nuketown);  
+}
+
+.subtitle {
+  cursor: pointer;
+}
+
 .subtitle-main {
   color: var(--nuketown);  
 }
@@ -70,5 +85,6 @@ html, body {
 }
 
 .vault-box {
-  box-shadow: inset;
+  overflow: auto;
+  /* box-shadow: inset; */
 }
