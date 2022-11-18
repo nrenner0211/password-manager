@@ -10,6 +10,14 @@ html, body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+main {
+  margin: 1rem 3rem;
+}
+
+form {
+  margin: 0.5rem 1rem;
+}
+
 #hero {
   background-image: url(/images/keyboard.jpg);
   background-size: cover;
@@ -20,30 +28,37 @@ html, body {
 
 #logo {
   color: rgba(236, 229, 240, 0.3);
-  font-size: 150px;
+  font-size: 10rem;
 }
 
 .button {
   font-family: 'Ubuntu', monospace;
+  margin: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .card {
   background-color: var(--alice-blue);
-  /* width: 80%; */
+  padding: 3px;
+  margin: auto;
 }
 
 .card-header {
-  border-bottom: solid 1px var(--alice-blue);
-  font-size: larger;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 86%);
+  border-bottom: solid 1px var(--nuketown);
+  font-size: 1.5rem;
   font-weight: bold;
-  padding-bottom: 10px;
-  width: 50%;
+  margin: .5rem;
+  padding: 10px;
+  max-width: 50%;
 }
 
 .card-header:hover {
-  border-bottom: solid 1px var(--nuketown);
-  cursor: pointer;
-  background-color: hsl(0, 0%, 86%);
+  background-color: hsl(0, 0%, 73%);
+}
+
+.card-header-secondary {
+  max-width: 50%;
 }
 
 .center {
@@ -58,12 +73,12 @@ html, body {
 
 .navbar {
   background-color: var(--smoky-black);
-  font-size: larger;
+  font-size: 1.7rem;
 }
 
 .secret {
   opacity: 0.0;
-  font-size: larger;
+  font-size: 2rem;
 }
 
 .secret:hover {
@@ -73,6 +88,7 @@ html, body {
 }
 
 .subtitle {
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -81,6 +97,7 @@ html, body {
 }
 
 .title {
+  font-size: 2rem;
   color: var(--nuketown);
 }
 
