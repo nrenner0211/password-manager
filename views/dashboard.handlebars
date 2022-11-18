@@ -4,6 +4,7 @@
       <div class="column card has-background-white-ter">
         <header class="card-header center">add to vault</header>
 
+
         <form class="new-item-form">
 
           <label for="title"></label>
@@ -14,7 +15,7 @@
           <input id="content" class="field input" name="content"
           placeholder="Password" />
 
-          <button type="submit" class="new-item-form button is-primary is-outlined">add<i
+          <button type="submit" class="new-item-form button is-primary">add<i
               class="fa-solid fa-plus"></i></button>
         </form>
       </div>
@@ -25,20 +26,20 @@
   {{! LOGO }}
 
   <section class="section is-small">
-    <i id="logo" class="center fa-solid fa-lock"></i>
+    <i id="logo" class="center fa-solid fa-unlock"></i>
   </section>
 
   {{#if items.length}}
   <div class="section">
     <div class="card has-background-grey-light">
-      <div class="column card has-background-white-ter">
+      <div class="column has-background-white-ter">
         <header class="card-header center">your vault</header>
         <div class="box vault-box has-background-white-bis">
           <div class="columns">
             {{#each items as |item|}}
             <div class="column">
               {{> item-info item}}
-              <a href="/dashboard/edit/{{item.id}}" class="edit-link button is-primary is-outlined">edit</a>
+              <a href="/dashboard/edit/{{item.id}}" class="edit-link button is-primary">edit</a>
             </div>
             {{/each}}
           </ul>
